@@ -24,9 +24,8 @@ sha2 = "0.10"
 hmac = "0.12"
 ed25519-dalek = "2.0"
 
-# Stellar/Soroban
-stellar-sdk = "0.24"
-soroban-sdk = "0.9.2"
+# Stellar/Soroban (commented out for rate limiting implementation)
+# soroban-sdk = "20.0.0"
 thiserror = "1.0"
 
 # Utilities
@@ -39,6 +38,12 @@ tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 # Configuration
 dotenv = "0.15"
 config = "0.14"
+
+# Rate limiting
+governor = "0.6"
+redis = { version = "0.24", features = ["tokio-comp", "connection-manager"] }
+dashmap = "5.5"
+async-trait = "0.1"
 
 [dev-dependencies]
 tempfile = "3.8"
