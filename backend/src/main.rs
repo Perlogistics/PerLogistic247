@@ -1,4 +1,5 @@
 mod rate_limit;
+mod migrations;
 
 use axum::{
     extract::{FromRef, State},
