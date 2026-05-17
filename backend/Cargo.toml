@@ -45,6 +45,9 @@ redis = { version = "0.24", features = ["tokio-comp", "connection-manager"] }
 dashmap = "5.5"
 async-trait = "0.1"
 
+# CLI for migrations
+clap = { version = "4.4", features = ["derive"] }
+
 [dev-dependencies]
 tempfile = "3.8"
 mockall = "0.12"
@@ -52,3 +55,7 @@ mockall = "0.12"
 [[bin]]
 name = "server"
 path = "src/main.rs"
+
+[[bin]]
+name = "migrate"
+path = "src/bin/migrate.rs"
