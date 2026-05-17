@@ -1,0 +1,73 @@
+# GitHub Labels Configuration
+
+- name: "bug"
+  color: "d73a4a"
+  description: "Something isn't working"
+
+- name: "enhancement"
+  color: "a2eeef"
+  description: "New feature or request"
+
+- name: "good-first-issue"
+  color: "7057ff"
+  description: "Good for newcomers"
+
+- name: "help-wanted"
+  color: "008672"
+  description: "Extra attention is needed"
+
+- name: "backend"
+  color: "fbca04"
+  description: "Issues related to backend services"
+
+- name: "frontend"
+  color: "fbca04"
+  description: "Issues related to frontend application"
+
+- name: "contracts"
+  color: "fbca04"
+  description: "Issues related to smart contracts"
+
+- name: "security"
+  color: "ee0701"
+  description: "Security related issues"
+
+- name: "performance"
+  color: "1d76db"
+  description: "Performance related issues"
+
+- name: "documentation"
+  color: "0075ca"
+  description: "Improvements or additions to documentation"
+
+- name: "api"
+  color: "c5def5"
+  description: "API related issues"
+
+- name: "database"
+  color: "c5def5"
+  description: "Database related issues"
+
+- name: "redis"
+  color: "c5def5"
+  description: "Redis related issues"
+
+- name: "real-time"
+  color: "c5def5"
+  description: "Real-time features"
+
+- name: "websockets"
+  color: "c5def5"
+  description: "WebSocket implementations"
+
+- name: "priority/high"
+  color: "b60205"
+  description: "High priority"
+
+- name: "priority/medium"
+  color: "fbca04"
+  description: "Medium priority"
+
+- name: "priority/low"
+  color: "84b6eb"
+  description: "Low priority"
