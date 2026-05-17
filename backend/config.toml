@@ -1,0 +1,21 @@
+[rate_limit]
+# Strategy: "in_memory", "redis", or "distributed"
+strategy = "in_memory"
+
+# Requests per minute per client
+requests_per_minute = 60
+
+# Requests per hour per client
+requests_per_hour = 1000
+
+# Burst size (maximum requests in a single second)
+burst_size = 10
+
+# Cleanup interval for in-memory rate limiter (in seconds)
+cleanup_interval = 60
+
+# Redis URL (required for redis strategy)
+redis_url = "redis://localhost:6379"
+
+# Distributed nodes (comma-separated list of node URLs for distributed strategy)
+distributed_nodes = "http://node1:3000,http://node2:3000,http://node3:3000"

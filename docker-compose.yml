@@ -13,7 +13,6 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      - ./scripts/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 10s
@@ -42,6 +41,24 @@ services:
       - STELLAR_NETWORK=standalone
     command: --standalone --enable-rpc --enable-friendbot
 
+  # Migration runner
+  migrate:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: supply-chain-migrate
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@postgres:5432/supply_chain
+      MIGRATIONS_DIR: /app/migrations
+      RUST_LOG: info
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./backend:/app
+      - /app/target
+    command: cargo run --bin migrate -- up
+
   # Backend API
   backend:
     build:
@@ -59,6 +76,8 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
       redis:
         condition: service_started
       stellar:
