@@ -1,0 +1,11 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="32" height="32" rx="6" fill="#008080"/>
+  <g transform="translate(4, 4)">
+    <rect x="4" y="8" width="16" height="12" rx="2" fill="#0A1F44"/>
+    <rect x="5" y="9" width="14" height="10" rx="1" fill="none" stroke="#FF8C00" stroke-width="1"/>
+    <line x1="4" y1="11" x2="20" y2="11" stroke="#FF8C00" stroke-width="1"/>
+    <line x1="4" y1="13" x2="20" y2="13" stroke="#FF8C00" stroke-width="1"/>
+    <line x1="4" y1="15" x2="20" y2="15" stroke="#FF8C00" stroke-width="1"/>
+    <text x="12" y="23" text-anchor="middle" fill="#0A1F44" font-family="Arial, sans-serif" font-size="6" font-weight="bold">PL</text>
+  </g>
+</svg>

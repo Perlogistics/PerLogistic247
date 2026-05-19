@@ -1,0 +1,11 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="180" height="180" rx="40" fill="#0A1F44"/>
+  <g transform="translate(30, 30)">
+    <rect x="20" y="40" width="80" height="60" rx="4" fill="#008080"/>
+    <rect x="25" y="45" width="70" height="50" rx="2" fill="none" stroke="#FF8C00" stroke-width="2"/>
+    <line x1="20" y1="55" x2="100" y2="55" stroke="#FF8C00" stroke-width="3"/>
+    <line x1="20" y1="70" x2="100" y2="70" stroke="#FF8C00" stroke-width="3"/>
+    <line x1="20" y1="85" x2="100" y2="85" stroke="#FF8C00" stroke-width="3"/>
+    <text x="60" y="130" text-anchor="middle" fill="#008080" font-family="Arial, sans-serif" font-size="24" font-weight="bold">PL</text>
+  </g>
+</svg>
